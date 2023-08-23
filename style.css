@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+:root {
+    --bs-dark-color: #1a1d20;
+    --bs-dark-primary: #1c1c1c;
+    --bs-main-color: #fff;
+    --bs-primary-color: #c6c6c6;
+    --secondary-colors: #29a9fd;
+    --bs-supporting-color: #c850c0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--bs-dark-color);
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 3.8rem;
+    font-weight: 800;
+}
+
+h2 {
+    line-height: 3rem;
+    font-weight: 600;
+    font-size: 3.4rem;
+}
+
+p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--bs-dark-color);
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button, a{
+    font-size: 1.15rem !important;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.1rem;
+}
+
+.common-heading{
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.01rem !important;
+}
+
+.common-title{
+    margin-bottom: 4.2rem;
+}
+
+.common-section{
+    padding: 0 0 9rem 0;
+}
+
+/* ==============================================================navbar section start============================================================== */
+
+.nav-link, .navbar-brand{
+    color: var(--bs-main-color);
+}
+.nav-link:hover{
+    color: var( --secondary-colors);
+}
+
+.company-logo{
+    color: var(--secondary-colors);
+}
+/* ==============================================================navbar section end ==============================================================*/
+
+
+/* ==============================================================Hero section start============================================================== */
+
+.hero-video-section {
+    width: 30rem;
+    border-radius: 2rem;
+}
+
+.hero-section .container {
+    display: grid;
+    place-content: center;
+    height: inherit;
+}
+
+.bg-main{
+    height: 80vh;
+    position: relative;
+}
+.bg-color{
+    background-color: var(--bs-dark-color);
+}
+.text-light-grey{
+    color: var(--bs-primary-color);
+}
+
+.custom-shape-divider-bottom-1692452121 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1692452121 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1692452121 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* ==============================================================Hero section Ends============================================================== */
+
+
+/* ==============================================================Services section start============================================================== */
+
+.services-section{
+    padding: 6rem 0 3rem 0 !important;
+}
+
+.icon-span{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--secondary-colors);
+    color: var(--bs-main-color);
+}
+
+.card-box:hover{
+box-shadow: rgba(149, 157, 165,0.2) 0 8px 24px;
+}
+
+/* ==============================================================Services Section Ends============================================================== */
+
+/* ==============================================================More Info Section Starts============================================================== */
+
+.more-info-section{
+    background-image: linear-gradient(rgba(22,22,22,0.1),rgba(22,22,22,0.9)),url("https://images.pexels.com/photos/316093/pexels-photo-316093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.more-info-section .img-section{
+    position: relative;
+}
+
+.more-info-section .img-section img{
+    width: 70%;
+}
+
+/* ==============================================================More Info Section Ends============================================================== */
+
+/* ==============================================================Online Mode Section Starts============================================================== */
+
+.business-section{
+    padding-top: 3rem;;
+}
+
+.business-section .target{
+    position: relative;
+    left: -20px;
+}
+
+/* ==============================================================Online Mode Section Ends============================================================== */
+
+/* ===============================================================Testimonial section starts ============================================================  */
+
+.carousel .card{
+    color: var(--bs-main-color);
+    transition: all 0.3s linear;
+    background-color: #262631;
+}
+
+.carousel-inner .card p{
+    color: var(--bs-main-color);
+}
+
+.carousel-inner .card:hover{
+    color: var(--bs-dark-color);
+    background-color: var(--bs-main-color);
+}
+
+.carousel-inner .card:hover p{
+    color: var(--bs-dark-color);
+}
+
+.fa-star{
+    color:var(--bs-supporting-color)
+}
+.card:hover .fa-star{
+    color:var(--bs-dark-color)
+}
+.carousel-indicators {
+    bottom: -20%;
+}
+.carousel-indicators [data-bs-target] {
+
+    width:  0.7rem;
+    height: 0.7rem;
+    background-color: var(--secondary-colors);
+}
+.card img{
+    height: 165px;
+    width: 255px;
+}
+/* ===============================================================Testimonial section ends ============================================================  */
+
+
+/* ===============================================================Expert Panel section starts ============================================================  */
+
+.expert-section img{
+    width: auto;
+}
+
+.small-text-grey{
+    color: var(--bs-primary-color);
+}
+
+
+/* ===============================================================Expert Panel section ends ============================================================  */
+
+/* ===============================================================Contact Us section starts ============================================================  */
+
+.contact-us{
+    position: relative;
+}
+
+.custom-shape-divider-top-1692707870 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1692707870 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1692707870 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.contact-us .form-section{
+    width: 50%;
+}
+/* ===============================================================Contact Us section ends ============================================================  */
+
+/* ===============================================================Footer section starts ============================================================  */
+
+.icon-div{
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+}
+.icon-bottom{
+    color: var(--bs-main-color);
+    font-size: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+/* ===============================================================Footer section ends ============================================================  */
+
+/* ===============================================================Media Queries starts ============================================================  */
+
+
+
+@media screen and (max-width: 1200px ){
+
+    .hero-video-section{
+        width: 20rem;
+        border-radius: 1rem;
+    }
+    
+    .custom-shape-divider-bottom-1692452121 svg{
+        height: 70px;
+    }
+
+    .custom-shape-divider-top-1692707870 svg{
+        height: 70px;
+    }
+    .carousel-indicators {
+        bottom: -2%;
+    }
+
+    .icon-bottom{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .final-copyright{
+        font-size: 0.8rem;
+    }
+
+    .common-section{
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    .company-logo{
+        font-size: 1.4rem !important;
+    }
+    .business-section .target{
+        position: relative;
+        left: 0px;
+    }
+
+    .hero-section{
+        padding-top: 4rem;
+    }
+}
+@media screen and (max-width: 998px ){
+  
+    .navbar-toggler{
+        border-color: var(--bs-main-color);
+    }
+
+    .navbar-toggler-icon{
+        background-color: var(--bs-main-color);
+        
+    }
+    
+    h1{
+        font-size: 2.4rem;
+    }
+
+    section .common-heading{
+        font-size: 2rem;
+    }
+
+    section .para-width{
+        width:auto;
+    }
+
+    .hero-section{
+        height: 100vh;
+    }
+
+} 
+
+@media screen and (orientation:landscape){
+    .hero-section{
+        height: 185vh;
+    }
+ }
+ @media screen and (min-width: 1500px) and (orientation:landscape){
+    .hero-section{
+        height: 100vh;
+    }
+ }
+/* ===============================================================Media Queries ends ============================================================  */
+
